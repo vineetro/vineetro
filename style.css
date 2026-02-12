@@ -1,0 +1,387 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: white;
+}
+
+/* NAVBAR */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #00eaff;
+}
+
+/* HERO SECTION */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px;
+}
+
+.hero-text {
+    max-width: 50%;
+}
+
+.hero-text h4 {
+    color: #00eaff;
+    margin-bottom: 10px;
+}
+
+.hero-text h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* BUTTONS */
+.buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.btn-primary {
+    background: #00eaff;
+    color: black;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-outline {
+    background: transparent;
+    color: white;
+    padding: 12px 25px;
+    border: 2px solid white;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.btn-primary:hover,
+.btn-outline:hover {
+    opacity: 0.8;
+}
+
+/* IMAGE */
+.hero-image img {
+    width: 380px;
+}* PRODUCT PAGE */
+.product-page {
+    padding: 50px 60px;
+}
+
+.page-title {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 36px;
+}
+
+.product-card {
+    display: flex;
+    gap: 40px;
+    background: rgba(255,255,255,0.05);
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.product-image img {
+    width: 300px;
+    border-radius: 15px;
+}
+
+.product-details h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.price {
+    color: #00eaff;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.product-details ul {
+    margin-left: 20px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.note {
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.buy-btn {
+  display: inline-block;
+  padding: 8px 18px;      /* size control */
+  font-size: 14px;
+  background-color: #6fe3e1;
+  color: #004d4d;
+  text-decoration: none;
+  border-radius: 20px;
+  font-weight: 600;
+  text-align: center;
+  white-space: nowrap;   /* button ko lamba hone se roke */
+}
+
+/* hover effect */
+.buy-btn:hover {
+  background-color: #55d1cf;
+}
+.service-header {
+  background: #0b3d3d;
+  color: #ffffff;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.service-header p {
+  margin-top: 10px;
+  color: #cfeeee;
+  font-size: 15px;
+}
+
+.service-wrapper {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+.service-box {
+  background: #ffffff;
+  padding: 30px;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+.service-box h2 {
+  margin-bottom: 15px;
+  color: #0b3d3d;
+}
+
+.highlight {
+  border-left: 6px solid #00bfbf;
+}
+
+.service-price {
+  font-size: 36px;
+  font-weight: bold;
+  color: #00a9a9;
+  margin: 10px 0;
+}
+
+.service-desc {
+  color: #444;
+  line-height: 1.6;
+}
+
+.price-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.price-table th,
+.price-table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+.price-table th {
+  background: #f2fafa;
+  color: #0b3d3d;
+}
+
+.price-table td {
+  color: #333;
+}
+
+.service-note {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #006666;
+}
+
+.contact-section {
+  background: linear-gradient(to right, #0b3d3d, #134e4a);
+  padding: 80px 20px;
+  color: rgb(111, 180, 205);
+}
+
+.contact-container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.contact-container h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.contact-container p {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #61c3d4;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.contact-info {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  color: black;
+}
+
+.contact-info a {
+  color: #0b3d3d;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-form {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  color: black;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #3f9ae4;
+}
+
+.contact-form textarea {
+  resize: none;
+  height: 100px;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 12px;
+  background: #0b3d3d;
+  color: rgb(101, 166, 223);
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  background: #134e4a;
+}
+
+/* Responsive */
+@media(max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.book-service {
+  background: linear-gradient(to right, #0b3d3d, #134e4a);
+  padding: 80px 20px;
+  color: white;
+}
+
+.service-container {
+  max-width: 600px;
+  margin: auto;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 15px;
+  color: black;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.service-container h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.service-container p {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.input-group input,
+.input-group textarea,
+.input-group select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.input-group textarea {
+  resize: none;
+  height: 80px;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background: #0b3d3d;
+  color: white;
+  font-size: 16px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.submit-btn:hover {
+  background: #134e4a;
+}
