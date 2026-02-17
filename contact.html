@@ -5,6 +5,27 @@
   <title>Contact Us | Vineet RO</title>
   <link rel="stylesheet" href="style.css">
 </head>
+  <script>
+document.getElementById("contactForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    let name = document.querySelector("#name").value;
+    let phone = document.querySelector("#phone").value;
+    let message = document.querySelector("#message").value;
+
+    let whatsappNumber = "919752047345"; // 👈 Apna number yaha daalo
+
+    let whatsappMessage = 
+        "New Contact Message:%0A%0A" +
+        "Name: " + name + "%0A" +
+        "Phone: " + phone + "%0A" +
+        "Message: " + message;
+
+    let url = "https://wa.me/" + whatsappNumber + "?text=" + whatsappMessage;
+
+    window.open(url, "_blank");
+});
+</script>
 <body>
 
 <header>
@@ -29,7 +50,7 @@
       <div class="contact-info">
         <h2>Get In Touch</h2>
 
-        <p><strong>📞 Call:</strong> +91 9752047345</p>
+        <p><strong>📞 Call:</strong> +919752047345</p>
         <p><strong>📱 WhatsApp:</strong> 
           <a href="https://wa.me/9752047345" target="_blank">
             Chat Now
@@ -66,4 +87,5 @@ tower Star Avenue BDA Road, Canara Bank,Awadhpuri Bhopal, Madhya Pradesh</p>
 </body>
 
 </html>
+
 
