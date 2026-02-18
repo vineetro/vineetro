@@ -56,9 +56,7 @@
         <textarea placeholder="Any specific issue?"></textarea>
       </div>
 
-   <a href="https://wa.me/919752047345?text=Hello%20I%20want%20to%20book%20RO%20service.%20Please%20contact%20me." target="_blank">
-    <button type="button" class="submit-btn">Book Service</button>
-</a>
+  <button type="button" onclick="sendToWhatsApp()">Submit</button>
         Book Service
       </button>
 
@@ -66,8 +64,34 @@
   </div>
 </section>
 
+  <script>
+function sendToWhatsApp() {
+
+    var name = document.querySelector('input[placeholder="Enter your name"]').value;
+    var phone = document.querySelector('input[placeholder="Enter your phone number"]').value;
+    var address = document.querySelector('textarea[placeholder="Enter full address"]').value;
+    var service = document.querySelector('select').value;
+    var message = document.querySelector('textarea[placeholder="Any specific issue?"]').value;
+
+    var whatsappNumber = "919752047345"; // 👈 Yaha apna number daalo (91 + 10 digit)
+
+    var whatsappMessage =
+        "New Service Booking:%0A%0A" +
+        "Name: " + name + "%0A" +
+        "Phone: " + phone + "%0A" +
+        "Address: " + address + "%0A" +
+        "Service: " + service + "%0A" +
+        "Message: " + message;
+
+    var url = "https://wa.me/" + whatsappNumber + "?text=" + whatsappMessage;
+
+    window.open(url, "_blank");
+}
+</script>
+  
 </body>
 
 </html>
+
 
 
