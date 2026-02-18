@@ -5,27 +5,7 @@
   <title>Contact Us | Vineet RO</title>
   <link rel="stylesheet" href="style.css">
 </head>
-  <script>
-document.getElementById("contactForm").addEventListener("submit", function(e) {
-    e.preventDefault();
-
-    let name = document.querySelector("#name").value;
-    let phone = document.querySelector("#phone").value;
-    let message = document.querySelector("#message").value;
-
-    let whatsappNumber = "919752047345"; // 👈 Apna number yaha daalo
-
-    let whatsappMessage = 
-        "New Contact Message:%0A%0A" +
-        "Name: " + name + "%0A" +
-        "Phone: " + phone + "%0A" +
-        "Message: " + message;
-
-    let url = "https://wa.me/" + whatsappNumber + "?text=" + whatsappMessage;
-
-    window.open(url, "_blank");
-});
-</script>
+ 
 <body>
 
 <header>
@@ -71,11 +51,13 @@ tower Star Avenue BDA Road, Canara Bank,Awadhpuri Bhopal, Madhya Pradesh</p>
       <div class="contact-form">
         <h2>Send Message</h2>
 
-       <form id="contactForm">
+       <form id>
   <input type="text" id="name" placeholder="Your Name" required>
   <input type="tel" id="phone" placeholder="Phone Number" required>
   <textarea id="message" placeholder="Your Message" required></textarea>
-  <button type="submit">Send Message</button>
+         <a href="https://wa.me/919752047345?text=Hello%20I%20want%20to%20book%20RO%20service.%20Please%20contact%20me." target="_blank">
+    <button type="button" class="submit-btn">Book Service</button>
+</a>
 </form>
 
       </div>
@@ -87,5 +69,6 @@ tower Star Avenue BDA Road, Canara Bank,Awadhpuri Bhopal, Madhya Pradesh</p>
 </body>
 
 </html>
+
 
 
