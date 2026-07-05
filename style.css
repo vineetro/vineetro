@@ -123,15 +123,15 @@ nav a:hover {
     letter-spacing: 1px;
 }
 
-/* Laptop aur PC ke liye perfectly aligned Grid Layout */
+/* YAHAN SE DHYAN SE PASTE KARIYE (Strict Grid Setup) */
 .product-card {
-    display: grid;
-    grid-template-columns: 1fr 1.2fr; 
-    gap: 40px;
+    display: grid !important; /* Forcefully grid apply karega */
+    grid-template-columns: 1fr 1.2fr; /* Laptop/PC par image aur text aamne-samne layega */
+    gap: 50px;
     background: rgba(255, 255, 255, 0.05);
     padding: 35px;
     border-radius: 20px;
-    align-items: center; 
+    align-items: center; /* Image aur details ko vertically center karega */
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
     margin-bottom: 40px;
 }
@@ -139,14 +139,20 @@ nav a:hover {
 .product-image {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .product-image img {
     width: 100%;
-    max-width: 280px; 
+    max-width: 280px; /* Image size ko control me rakhega */
     height: auto;
     object-fit: contain;
     border-radius: 15px;
+}
+
+.product-details {
+    display: flex;
+    flex-direction: column;
 }
 
 .product-details h2 {
@@ -158,6 +164,20 @@ nav a:hover {
 .product-details ul {
     margin-bottom: 20px;
     padding-left: 20px;
+}
+
+/* Mobile Responsive Fix */
+@media(max-width: 768px) {
+    .product-card {
+        grid-template-columns: 1fr !important; /* Mobile par automatic ek ke neeche ek ho jayega */
+        gap: 25px;
+        padding: 20px;
+    }
+    .product-image img {
+        max-width: 220px;
+        margin: 0 auto;
+    }
+}
 }
 
 /* Mobile responsive screen fix (Phone par automatic adjustment ke liye) */
